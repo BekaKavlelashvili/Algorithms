@@ -23,7 +23,6 @@ int main() {
 
     d[1] = a[1];
     d[2] = a[2];
-
     for(int i = 3; i <= N; i++){
         d[i] = min(d[i - 1], d[i - 2]) + a[i];
     }
